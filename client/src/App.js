@@ -24,11 +24,6 @@ class App extends Component {
     this.fetchPlayerData()
   }
 
-  componentDidUpdate() {
-    console.log(this.state.playerData)
-    console.log(this.state.filteredPlayerData)
-  }
-
   updateSelectedTeam = (teamID, selectedTeam) => {
     console.log('updateSelectedTeam')
     this.setState({
