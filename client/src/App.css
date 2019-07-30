@@ -1,0 +1,59 @@
+body {
+  overflow: hidden;
+}
+
+.team-navbar {
+  width: 100vw;
+  height: 20vh;
+  position: relative;
+}
+
+.team-image img {
+  height: 20vh;
+  position:absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+}
+
+.team-select {
+  height: 20vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+.team-text {
+  margin-right: 1em;
+  align-self: flex-end;
+}
+
+.team-select select {
+  margin-right: 2em;
+  align-self: flex-end;
+}
+
+.bubble-chart {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+g.bubbles {
+  margin-top: 500px !important;
+}
+
+/* .bubble-chart svg {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  height: 100vh;
+  width: 60vw;
+}
+
+.bubble-chart svg g.bubbles {
+  border: solid red !important; 
+  height: 100vh !important;
+  width: 100vw !important;
+  margin-top: 300px;
+} */

@@ -1,0 +1,196 @@
+[
+  {
+    "id": 1,
+    "name": "Arizona Diamondbacks",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Arizona_Diamondbacks.png",
+    "location": "ARI",
+    "color": [
+      "#A71930",
+      "#E3D4AD",
+      "#000000",
+      "#30CED8",
+      "#FFFFFF"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Atlanta Braves",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Atlanta_Braves.png",
+    "location": "ATL",
+    "color": [
+      "#A71930",
+      "#E3D4AD",
+      "#000000",
+      "#30CED8",
+      "#FFFFFF"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Baltimore Orioles",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Baltimore_Orioles.png",
+    "location": "BAL"
+  },
+  {
+    "id": 4,
+    "name": "Boston Red Sox",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Boston_Redsox.png",
+    "location": "BOS"
+  },
+  {
+    "id": 5,
+    "name": "Chicago Cubs",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Chicago_Cubs.png",
+    "location": "CHC"
+  },
+  {
+    "id": 6,
+    "name": "Chicago White Sox",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Chicago_White_Sox.png",
+    "location": "CHW"
+  },
+  {
+    "id": 7,
+    "name": "Cincinnati Reds",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Cincinnati_Reds.png",
+    "location": "CIN"
+  },
+  {
+    "id": 8,
+    "name": "Cleveland Indians",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Cleveland_Indians.png",
+    "location": "CLE"
+  },
+  {
+    "id": 9,
+    "name": "Colorado Rockies",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Colorado_Rockies.png",
+    "location": "COL"
+  },
+  {
+    "id": 10,
+    "name": "Detroit Tigers",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Detroit_Tigers.png",
+    "location": "DET"
+  },
+  {
+    "id": 11,
+    "name": "Miami Marlins",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Miami_Marlins.png",
+    "location": "MIA"
+  },
+  {
+    "id": 12,
+    "name": "Houston Astros",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Houston_Astros.png",
+    "location": "HOU"
+  },
+  {
+    "id": 13,
+    "name": "Kansas City Royals",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/KansasCity_Royals.png",
+    "location": "KCR"
+  },
+  {
+    "id": 14,
+    "name": "Los Angeles Angels of Anaheim",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/LosAngeles_Angels.png",
+    "location": "LAA"
+  },
+  {
+    "id": 15,
+    "name": "Los Angeles Dodgers",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/LosAngeles_Dodgers.png",
+    "location": "LAD"
+  },
+  {
+    "id": 16,
+    "name": "Milwaukee Brewers",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Milwaukee_Brewers.png",
+    "location": "MIL"
+  },
+  {
+    "id": 17,
+    "name": "Minnesota Twins",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Minnesota_Twins.png",
+    "location": "MIN"
+  },
+  {
+    "id": 18,
+    "name": "New York Mets",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/NewYork_Mets.png",
+    "location": "NYM"
+  },
+  {
+    "id": 19,
+    "name": "New York Yankees",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/NewYork_Yankees.png",
+    "location": "NYY"
+  },
+  {
+    "id": 20,
+    "name": "Oakland Athletics",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Oakland_Athletics.png",
+    "location": "OAK"
+  },
+  {
+    "id": 21,
+    "name": "Philadelphia Phillies",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Philadelphia_Phillies.png",
+    "location": "PHI"
+  },
+  {
+    "id": 22,
+    "name": "Pittsburgh Pirates",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Pittsburgh_Pirates.png",
+    "location": "PIT"
+  },
+  {
+    "id": 23,
+    "name": "Saint (St.) Louis Cardinals",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/StLouis_Cardinals.png",
+    "location": "STL"
+  },
+  {
+    "id": 24,
+    "name": "San Diego Padres",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/SanDiego_Padres.png",
+    "location": "SDP"
+  },
+  {
+    "id": 25,
+    "name": "San Francisco Giants",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/SanFrancisco_Giants.png",
+    "location": "SFG"
+  },
+  {
+    "id": 26,
+    "name": "Seattle Mariners",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Seattle_Mariners.png",
+    "location": "SEA"
+  },
+  {
+    "id": 27,
+    "name": "Tampa Bay Rays",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/TampaBay_Rays.png",
+    "location": "TBR"
+  },
+  {
+    "id": 28,
+    "name": "Texas Rangers",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Texas_Rangers.png",
+    "location": "TEX"
+  },
+  {
+    "id": 29,
+    "name": "Toronto Blue Jays",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Toronto_Blue_Jays.png",
+    "location": "TOR"
+  },
+  {
+    "id": 30,
+    "name": "Washington Nationals",
+    "img_url": "http://www.capsinfo.com/images/MLB_Team_Logos/Washington_Nationals.png",
+    "location": "WAN"
+  }
+]
