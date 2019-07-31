@@ -65,6 +65,7 @@ class App extends Component {
           updateSelectedTeam={this.updateSelectedTeam}
         />
         <BubbleChart
+          teamID={this.state.teamID}
           playerData={this.state.playerData}
           filteredPlayerData={this.state.filteredPlayerData}
           playersLoaded={this.state.playersLoaded}
