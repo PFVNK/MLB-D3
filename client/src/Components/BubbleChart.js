@@ -13,6 +13,7 @@ class BubbleChart extends Component {
     }
   }
 
+
   componentWillReceiveProps(nextProps) {
     console.log(nextProps.filteredPlayerData)
     this.setState({
@@ -26,13 +27,13 @@ class BubbleChart extends Component {
   }
 
   render() {
+    let teamColor = teams[this.props.teamID].color
+    console.log(teamColor)
     const data = this.state.playerData.map(player => ({
       index: player.index,
       tooltip: `${player.name}`,
-      color: "#E3D4AD",
-      radius: +player.radius + 40,
-      width: 800,
-      height: 450
+      color: teamColor,
+      radius: +player.radius + 30,
     }))
     console.log(data)
     if (this.props.playersLoaded) {
