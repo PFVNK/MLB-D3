@@ -6,7 +6,7 @@ import BubbleChart from './Components/BubbleChart'
 
 let teams = require('./teams/teams.json')
 
-const API_URL = 'http://localhost:3001/graph'
+const API_URL = '/graph'
 
 class App extends Component {
   constructor(props) {
