@@ -10,6 +10,8 @@ const app = express()
 app.use(cors())
 app.use(morgan('tiny'))
 
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 function getResults(body) {
   const $ = cheerio.load(body)
   const table = $('table#team_batting tr')
