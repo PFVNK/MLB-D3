@@ -13,7 +13,6 @@ class BubbleChart extends Component {
     }
   }
 
-
   componentWillReceiveProps(nextProps) {
     console.log(nextProps.filteredPlayerData)
     this.setState({
@@ -23,17 +22,29 @@ class BubbleChart extends Component {
 
   componentDidUpdate() {
     console.log('bubblechart updated')
-
+    console.log(this.props.selectedStat)
   }
 
   render() {
     let teamColor = teams[this.props.teamID].color
-    console.log(teamColor)
+    let selectedStat = this.props.selectedStat
+
+    if (selectedStat === 'homeRun') {
+      var operation = 30
+    } else if (selectedStat === 'battingAVG') {
+      operation = -250
+    } else {
+      operation = -30
+    }
+
     const data = this.state.playerData.map(player => ({
       index: player.index,
-      tooltip: `${player.name}`,
+      tooltip: `${player.name} 
+BA: ${player.battingAVG} 
+HR: ${player.homeRun} 
+HITS: ${player.hits}`,
       color: teamColor,
-      radius: +player.radius + 30,
+      radius: +player[selectedStat].replace(/\./g, "") + +`${operation}`,
     }))
     console.log(data)
     if (this.props.playersLoaded) {
