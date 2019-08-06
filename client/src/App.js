@@ -16,12 +16,21 @@ class App extends Component {
       playerData: [],
       filteredPlayerData: [],
       selectedTeam: 'Arizona Diamondbacks',
+      selectedStat: 'homeRun',
       teamID: 0
     }
   }
 
   componentDidMount() {
     this.fetchPlayerData()
+  }
+
+  updateSelectedStat = (selectedStat) => {
+    this.setState({
+      selectedStat,
+    },
+      () => this.fetchPlayerData()
+    )
   }
 
   updateSelectedTeam = (teamID, selectedTeam) => {
@@ -63,10 +72,12 @@ class App extends Component {
           teamID={this.state.teamID}
           selectedTeam={this.state.selectedTeam}
           updateSelectedTeam={this.updateSelectedTeam}
+          updateSelectedStat={this.updateSelectedStat}
         />
         <BubbleChart
           teamID={this.state.teamID}
           playerData={this.state.playerData}
+          selectedStat={this.state.selectedStat}
           filteredPlayerData={this.state.filteredPlayerData}
           playersLoaded={this.state.playersLoaded}
         />
