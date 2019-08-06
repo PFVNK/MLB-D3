@@ -7,26 +7,44 @@ class NavBar extends Component {
   constructor(props) {
     super(props);
 
-    this.handleTeamChange = this.handleTeamChange.bind(this)
+
   }
 
   componentDidUpdate() {
     console.log('navbar did update')
   }
 
-  handleTeamChange(e) {
+  handleTeamChange = (e) => {
     let teamID = e.target.selectedIndex
     let selectedTeam = e.target.value
     this.props.updateSelectedTeam(teamID, selectedTeam)
+  }
+
+  handleStatChange = (e) => {
+    let selectedStat = e.target.value
+    this.props.updateSelectedStat(selectedStat)
   }
 
   render() {
     return (
       <>
         <div className='team-navbar'>
+
+          <div className='stat-select'>
+            <div className='stat-text'>
+              Sort by stat:
+            </div>
+            <select value={this.props.selectedStat} onChange={this.handleStatChange}>
+              <option value="homeRun">Home Run</option>
+              <option value="battingAVG">Batting Avg</option>
+              <option value="hits">Hits</option>
+            </select>
+          </div>
+
           <div className='team-image'>
             <img src={teams[this.props.teamID].img_url} alt="" />
           </div>
+
           <div className='team-select'>
             <div className='team-text'>
               Pick a team:
@@ -64,7 +82,6 @@ class NavBar extends Component {
               <option value='Washington Nationals' id='30'>Washington Nationals</option>
             </select>
           </div>
-
         </div>
       </>
     );
