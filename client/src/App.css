@@ -8,6 +8,24 @@ body {
   position: relative;
 }
 
+.stat-select {
+  height: 20vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+
+.stat-text {
+  margin-left: 1em;
+  align-self: flex-end;
+}
+
+.stat-select select {
+  margin-left: 2em;
+  align-self: flex-end;
+}
+
 .team-image img {
   height: 20vh;
   position:absolute;
@@ -39,8 +57,20 @@ body {
   width: 100vw;
 }
 
+div#gates_tooltip.tooltip {
+  background: black !important;
+  min-width: 110px !important;
+  color: white !important;
+  white-space: pre !important;
+}
+
 g.bubbles {
   margin-top: 500px !important;
+}
+
+.bubble-chart svg {
+  width: 100vw;
+  height: 100vh;
 }
 
 /* .bubble-chart svg {
