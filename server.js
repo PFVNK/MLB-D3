@@ -20,7 +20,7 @@ function getResults(body) {
     const name = player.find('td.left[data-stat=player] a').text()
     const position = player.find('td.left[data-stat=pos]').text()
     const hits = player.find('td.right[data-stat=H]').text()
-    const radius = player.find('td.right[data-stat=HR]').text()
+    const homeRun = player.find('td.right[data-stat=HR]').text()
     const battingAVG = player.find('td.right[data-stat=batting_avg]').text()
     const color = "#F4911E"
 
@@ -30,7 +30,7 @@ function getResults(body) {
       color,
       position,
       hits,
-      radius,
+      homeRun,
       battingAVG
     })
   })
