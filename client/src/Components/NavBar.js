@@ -4,28 +4,22 @@ import '../App.css';
 let teams = require('../teams/teams.json')
 
 class NavBar extends Component {
-  constructor(props) {
-    super(props);
-
-
-  }
-
-  componentDidUpdate() {
-    console.log('navbar did update')
-  }
 
   handleTeamChange = (e) => {
+    const { updateSelectedTeam } = this.props
     let teamID = e.target.selectedIndex
     let selectedTeam = e.target.value
-    this.props.updateSelectedTeam(teamID, selectedTeam)
+    updateSelectedTeam(teamID, selectedTeam)
   }
 
   handleStatChange = (e) => {
+    const { updateSelectedStat } = this.props
     let selectedStat = e.target.value
-    this.props.updateSelectedStat(selectedStat)
+    updateSelectedStat(selectedStat)
   }
 
   render() {
+    const { selectedStat } = this.props
     return (
       <>
         <div className='team-navbar'>
@@ -34,7 +28,7 @@ class NavBar extends Component {
             <div className='stat-text'>
               Sort by stat:
             </div>
-            <select value={this.props.selectedStat} onChange={this.handleStatChange}>
+            <select value={selectedStat} onChange={this.handleStatChange}>
               <option value="homeRun">Home Run</option>
               <option value="battingAVG">Batting Avg</option>
               <option value="hits">Hits</option>

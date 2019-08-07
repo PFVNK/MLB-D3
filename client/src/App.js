@@ -34,7 +34,6 @@ class App extends Component {
   }
 
   updateSelectedTeam = (teamID, selectedTeam) => {
-    console.log('updateSelectedTeam')
     this.setState({
       selectedTeam,
       teamID
@@ -44,8 +43,9 @@ class App extends Component {
   }
 
   filterPlayerData = () => {
-    console.log('filterPlayerData')
-    let filteredPlayerData = this.state.playerData.filter(p => p.name).slice(0, this.state.playerData.length / 2)
+    let { playerData } = this.state
+
+    let filteredPlayerData = playerData.filter(p => p.name).slice(0, playerData.length / 2)
     this.setState({
       filteredPlayerData,
       playersLoaded: true
@@ -53,8 +53,8 @@ class App extends Component {
   }
 
   fetchPlayerData = () => {
-    console.log('fetchPlayerData')
-    const playerData = `${API_URL}/${teams[this.state.teamID].location}`
+    const { teamID } = this.state
+    const playerData = `${API_URL}/${teams[teamID].location}`
 
     fetch(playerData)
       .then(response => response.json())
